@@ -19,3 +19,8 @@ jobs:
           echo "Triggered by: ${{ github.actor }}"
           echo "Repository: ${{ github.repository }}"
           echo "Branch/Ref: ${{ github.ref }}"
+      - name: Run a Node script
+        run: |
+         echo "console.log('This is a CI job')" > app.js
+         node app.js
+
