@@ -2,8 +2,8 @@ name: Hello World Pipeline
 
 # --- 1️⃣ Trigger the workflow when pushing to main ---
 on:
-  push:
-    branches: [ main ]
+  #push:
+    #branches: [ main ]
   workflow_dispatch:  # allows manual trigger
 
 # --- 2️⃣ Define jobs ---
